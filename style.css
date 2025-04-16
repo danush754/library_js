@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./images/bookshelf.jpeg);
+    height: 100vh;
+}
+
+#topHeader {
+    width: 100%;
+    background-image: url(./images/bookshelf.jpeg);
+    height: 10%;
+}
+
+#title {
+
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    color: #fffefe;
+    pointer-events: none;
+}
+
+#desc {
+    margin: auto;
+    text-align: center;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: .8rem;
+    color: #fffefe;
+    pointer-events: none;
+}
+
+.booksContainer {
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    background-color: #d1e3e6b6;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#addBookModalOpen {
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    padding: .4rem 1.5rem;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: .05rem;
+    border: none;
+    background-color: #639394;
+    color: #fffefe;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: -2px 3px 5px #d1e2e7;
+}
+
+.bookCardContainer {
+    margin-top: 3%;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    overflow-y: scroll;
+
+}
+
+.bookCard {
+    background-color: #6e979b;
+    margin: 15px;
+    height: 350px;
+    border-radius: 8px;
+    overflow-y: hidden;
+
+}
+
+.bookTitle {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fefffe;
+    font-size: 28px;
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+.bookAuthor {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #0c1816;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0px 0px 80px;
+}
+
+.description {
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  padding: 13px;
+  color: #e2e9eb;
+  letter-spacing: 2px;
+  word-break: break-all;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rating i{
+    color: #2a5244;
+}
+
+.modalFields{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    
+}
+
+.modalFields label {
+    font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.modalFields input,textarea{
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.bookRemoveBtn{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+}

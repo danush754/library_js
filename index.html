@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Library</title>
+</head>
+
+<body>
+  <div id="topHeader">
+    <h2 id="title">Library</h2>
+    <p id="desc">Project to test my knowledge on constructor and prototype in javascript </p>
+  </div>
+
+  <div class="booksContainer">
+
+    <button type="button" id="addBookModalOpen" data-bs-toggle="modal" data-bs-target="#addBookModal">Add Book</button>
+
+
+    <div class="bookCardContainer">
+      <div class="bookCard" >
+        <h3 class="bookTitle">The People</h3>
+        <p class="bookAuthor">- By Dhanush</p>
+        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+          type and scrambled it to make a type specimen book
+        </p>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        
+        
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="modal fade" id="addBookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Book</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="modalFields">
+            <label for="bookName">Book Name:</label>
+            <input type="text" name="bookName" id="bookName">
+
+          </div>
+          <div class="modalFields">
+            <label for="authorName">Author Name:</label>
+            <input type="text" name="authorName" id="authorName">
+          </div>
+
+          <div class="modalFields">
+            <label for="bookDesc">Description:</label>
+            <textarea name="desc" id="bookDesc" style="resize: none;"></textarea>
+          </div>
+
+          <div class="modalFields">
+            <label for="rating">Rating:</label>
+            <input type="number" name="rating" id="rating" max="5" min="1">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="addBook">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
